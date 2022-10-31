@@ -1,7 +1,7 @@
 (ns coffee-shop.system
   (:require [com.stuartsierra.component :as component]
             [org.httpkit.server :refer [run-server]]
-            [coffee-shop.web :refer [app]]))
+            [coffee-shop.routes :refer [app]]))
 
 (defn start-server [handler port]
   (let [server (run-server handler {:port port})]

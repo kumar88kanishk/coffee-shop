@@ -6,7 +6,10 @@
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [com.stuartsierra/component "1.1.0"]
                  [compojure "1.7.0"]
-                 [http-kit "2.6.0"]]
+                 [http-kit "2.6.0"]
+                 [com.novemberain/monger "3.1.0"]
+                 [cheshire "5.1.1"]
+                 [clj-time "0.15.2"]]
   :main ^:skip-aot coffee-shop.system
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
